@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excluir Conta — Zé Finanças</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #faf9f7;
+    color: #1a1a1a;
+    line-height: 1.7;
+  }
+
+  header {
+    background: #4a3278;
+    color: white;
+    padding: 48px 24px;
+    text-align: center;
+  }
+
+  header h1 { font-size: 26px; margin-bottom: 8px; }
+  header p  { font-size: 14px; opacity: 0.75; }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    border: 1px solid #e5e0f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .card h2 {
+    font-size: 17px;
+    color: #4a3278;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card p  { font-size: 15px; color: #444; margin-bottom: 10px; }
+  .card ul { margin: 10px 0 0 20px; }
+  .card ul li { font-size: 15px; color: #444; margin-bottom: 8px; }
+
+  .step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0ebfa;
+  }
+
+  .step:last-child { border-bottom: none; }
+
+  .step-num {
+    width: 32px;
+    height: 32px;
+    background: #4a3278;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .step-text strong { display: block; color: #1a1a1a; margin-bottom: 4px; }
+  .step-text span   { font-size: 14px; color: #666; }
+
+  .warn {
+    background: #fff8e1;
+    border-left: 4px solid #f59e0b;
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
+    color: #78350f;
+    margin: 16px 0;
+  }
+
+  .email-btn {
+    display: block;
+    background: #4a3278;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 16px;
+    transition: background 0.2s;
+  }
+
+  .email-btn:hover { background: #3b2562; }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .data-table th {
+    background: #f0ebfa;
+    color: #4a3278;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .data-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0ebfa;
+    color: #444;
+    vertical-align: top;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .tag.excluido  { background: #fde8e8; color: #b91c1c; }
+  .tag.mantido   { background: #e8f5e9; color: #166534; }
+  .tag.anonimizado { background: #fff3e0; color: #b45309; }
+
+  footer {
+    text-align: center;
+    padding: 28px;
+    font-size: 13px;
+    color: #999;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 32px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🗑️ Exclusão de Conta e Dados</h1>
+  <p>Zé Finanças — Seu direito à privacidade garantido pela LGPD</p>
+</header>
+
+<div class="container">
+
+  <!-- Intro -->
+  <div class="card">
+    <h2>📋 Sobre este processo</h2>
+    <p>O <strong>Zé Finanças</strong> respeita seu direito à privacidade conforme a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018). Você pode solicitar a exclusão da sua conta e de todos os seus dados a qualquer momento, sem custo e sem necessidade de justificativa.</p>
+    <p>Após a confirmação da solicitação, seus dados serão permanentemente removidos em até <strong>30 dias</strong>.</p>
+  </div>
+
+  <!-- Opção 1 — Pelo app -->
+  <div class="card">
+    <h2>📱 Opção 1 — Excluir pelo próprio app</h2>
+    <p>A forma mais rápida. Siga os passos abaixo dentro do Zé Finanças:</p>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">
+        <strong>Abra o Zé Finanças</strong>
+        <span>Faça login com sua conta normalmente</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">
+        <strong>Toque no menu lateral (☰)</strong>
+        <span>No canto superior esquerdo da tela inicial</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">
+        <strong>Acesse Configurações</strong>
+        <span>Toque em "Configurações" no menu</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text">
+        <strong>Toque em "Excluir minha conta"</strong>
+        <span>Confirme a exclusão quando solicitado</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-text">
+        <strong>Confirmação</strong>
+        <span>Você receberá um e-mail confirmando que seus dados foram removidos</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Opção 2 — Por e-mail -->
+  <div class="card">
+    <h2>✉️ Opção 2 — Solicitar por e-mail</h2>
+    <p>Se não conseguir acessar o app, envie um e-mail para:</p>
+    <p><strong>egabriel42@gmail.com</strong></p>
+    <p>Com o assunto: <strong>"Exclusão de dados — Zé Finanças"</strong></p>
+    <p>Inclua no e-mail:</p>
+    <ul>
+      <li>O e-mail cadastrado na sua conta do Zé Finanças</li>
+      <li>O pedido de exclusão completa dos dados</li>
+    </ul>
+
+    <div class="warn">
+      ⏱️ Responderemos em até <strong>15 dias úteis</strong> confirmando o recebimento e em até <strong>30 dias</strong> seus dados serão completamente removidos.
+    </div>
+
+    <a class="email-btn"
+       href="mailto:egabriel42@gmail.com?subject=Exclusão de dados — Zé Finanças&body=Olá, solicito a exclusão completa da minha conta e dados no app Zé Finanças.%0A%0AE-mail da conta: [SEU EMAIL AQUI]">
+      📧 Enviar e-mail de solicitação
+    </a>
+  </div>
+
+  <!-- O que é excluído -->
+  <div class="card">
+    <h2>📊 O que acontece com seus dados</h2>
+    <p>Veja exatamente quais dados são excluídos, mantidos ou anonimizados:</p>
+
+    <table class="data-table">
+      <tr>
+        <th>Tipo de dado</th>
+        <th>O que acontece</th>
+        <th>Prazo</th>
+      </tr>
+      <tr>
+        <td>E-mail e senha</td>
+        <td><span class="tag excluido">Excluído</span></td>
+        <td>30 dias</td>
+      </tr>
+      <tr>
+        <td>Transações financeiras</td>
+        <td><span class="tag excluido">Excluído</span></td>
+        <td>30 dias</td>
+      </tr>
+      <tr>
+        <td>Contas bancárias cadastradas</td>
+        <td><span class="tag excluido">Excluído</span></td>
+        <td>30 dias</td>
+      </tr>
+      <tr>
+        <td>Categorias personalizadas</td>
+        <td><span class="tag excluido">Excluído</span></td>
+        <td>30 dias</td>
+      </tr>
+      <tr>
+        <td>Foto e nome (Google Sign-In)</td>
+        <td><span class="tag excluido">Excluído</span></td>
+        <td>30 dias</td>
+      </tr>
+      <tr>
+        <td>Logs de erro técnico</td>
+        <td><span class="tag anonimizado">Anonimizado</span></td>
+        <td>90 dias</td>
+      </tr>
+      <tr>
+        <td>Registros fiscais (se aplicável)</td>
+        <td><span class="tag mantido">Mantido por lei</span></td>
+        <td>5 anos (obrigação legal)</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Dúvidas -->
+  <div class="card">
+    <h2>❓ Dúvidas frequentes</h2>
+
+    <p><strong>Posso cancelar a solicitação?</strong><br>
+    Sim, desde que ainda esteja dentro do prazo de 30 dias. Entre em contato pelo e-mail acima.</p>
+
+    <p><strong>Meus dados são vendidos para alguém?</strong><br>
+    Não. O Zé Finanças nunca vende dados dos usuários a terceiros.</p>
+
+    <p><strong>O que acontece com minha assinatura Pro?</strong><br>
+    A assinatura é cancelada automaticamente junto com a exclusão da conta. Reembolsos seguem a política da Google Play Store.</p>
+
+    <p><strong>Posso criar uma nova conta depois?</strong><br>
+    Sim, com o mesmo e-mail ou um novo, a qualquer momento após a exclusão.</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Zé Finanças · <a href="politica_de_privacidade.html">Política de Privacidade</a> · Desenvolvido por Edson Gabriel<br>
+  Em conformidade com a LGPD (Lei nº 13.709/2018) e políticas do Google Play
+</footer>
+
+</body>
+</html>
